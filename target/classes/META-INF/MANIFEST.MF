@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: easybeasy_api
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Gui
+Implementation-Vendor-Id: br.com.fiap.easybeasy
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/easybeasy_api
+Created-By: Maven Integration for Eclipse
+
