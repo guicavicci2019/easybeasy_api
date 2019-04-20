@@ -15,9 +15,26 @@ public class ProdutoServiceImpl implements ProdutoService {
 	private ProdutoRepo produtoRepo;
 	
 	public Produto create(Produto produto) {
-		produtoRepo.save(produto);
 		
-		return produto;
+		Produto newProduto = new Produto();
+		
+		newProduto.setNome(produto.getNome());
+		newProduto.setCategoria(produto.getCategoria());
+		newProduto.setNomeLoja(produto.getNomeLoja());
+		newProduto.setRuaLoja(produto.getRuaLoja());
+		newProduto.setNumeroLoja(produto.getNumeroLoja());
+		newProduto.setTelLoja(produto.getTelLoja());
+		newProduto.setValor(produto.getValor());
+		newProduto.setNota(produto.getNota());
+		
+		
+		
+		if (newProduto.isValid()) {
+			
+			produtoRepo.save(newProduto);
+		}
+		
+		return newProduto;
 	}
 	
 	public void delete(Long id) {
@@ -30,7 +47,7 @@ public class ProdutoServiceImpl implements ProdutoService {
 		}
 	}
 	
-	public Optional<Produto> findById (Long id) {
+	public Optional<Produto> findById(Long id) {
 		
 		return this.produtoRepo.findById(id);
 		

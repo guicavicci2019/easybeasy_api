@@ -1,8 +1,12 @@
 package br.com.fiap.easybeasy.entity;
 
-public class Produto {
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Produtos")
+public class Produto extends BaseEntity{
 	
-		private Long id;
 	    private String nome;
 	    private String categoria;
 	    private String valor;
@@ -12,12 +16,7 @@ public class Produto {
 	    private String telLoja;
 	    private Double nota;
 	    
-		public Long getId() {
-			return id;
-		}
-		public void setId(Long id) {
-			this.id = id;
-		}
+
 		public String getNome() {
 			return nome;
 		}
