@@ -1,10 +1,7 @@
 package br.com.fiap.easybeasy.endpoint;
 
-import java.util.UUID;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class ApplicationEndpoint {
 

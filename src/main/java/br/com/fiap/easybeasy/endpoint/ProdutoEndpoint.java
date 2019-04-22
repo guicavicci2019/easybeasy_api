@@ -27,7 +27,7 @@ public class ProdutoEndpoint extends ApplicationEndpoint {
 	
 	@Autowired
 	private ProdutoService produtoService;
-	
+		
 	@PostMapping("/create/page")
 	public ResponseEntity<?> createProduto(@RequestBody @Valid Produto produto) {
 		produto = this.produtoService.create(produto);
